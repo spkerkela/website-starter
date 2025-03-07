@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "declaration": true,
+    "strict": true,
+    "jsx": "react",
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": false,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "erasableSyntaxOnly": true,
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    "outDir": "build",
+  },
+  "include": [
+    "src",
+  ],
+  "exclude": [
+    "node_modules",
+    "cdk.out",
+    "build",
+    "tests"
+  ]
+}
