@@ -19,7 +19,7 @@ const Layout = (props: any) => {
 const HomeContent = (_props: any) => {
   return (<div className='flex p-6'>
     <div className='p-8 mx-auto  max-w-bg bg-slate-600 rounded-md'>
-      <h1 className='mx-auto text-xl text-center text-gray-300'>Hello World</h1>
+      <h1 data-testid='hello-world' className='mx-auto text-xl text-center text-gray-300'>Hello World</h1>
       <p className='text-md text-center text-gray-200'>This is Sipe's starter template</p>
     </div>
   </div>)
