@@ -5,8 +5,8 @@ const Layout = (props: any) => {
   return <html lang='fi'>
     <head>
       <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
-      <meta name="description" content="Language Learning App"></meta>
-      <title>Language Learning App</title>
+      <meta name="description" content="My New App"></meta>
+      <title>My New App</title>
       <script src="/main.js"></script>
       <link rel="stylesheet" href="/main.css" />
     </head>
