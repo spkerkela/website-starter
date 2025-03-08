@@ -5,6 +5,7 @@
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc --watch",
+    "build:all": "tsc && tailwindcss -i ./src/client/css/index.css -o ./build/client/main.css",
     "start": "node build/index.js",
     "start:watch": "node --watch build/index.js",
     "tailwindcss": "tailwindcss -i ./src/client/css/index.css -o ./build/client/main.css --watch",
