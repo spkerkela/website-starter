@@ -1,5 +1,5 @@
 import express from "express"
-
+import compression from 'compression'
 
 import path from 'path'
 import Home from './views/home'
@@ -11,6 +11,7 @@ const app = express()
 
 const staticPath = path.join(__dirname, 'client')
 app.use(express.static(staticPath))
+app.use(compression())
 
 app.get('/', async (req, res) => {
   res.send(Home())
