@@ -34,9 +34,18 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
+    // Chromium and Firefox disabled in containerized environments
+    // To enable all browsers, use the official Playwright Docker image:
+    // docker run --rm --network host -v $(pwd):/work/ -w /work/ -it mcr.microsoft.com/playwright:v1.51.0-noble npm test
+
     // {
     //   name: 'chromium',
-    //   use: { ...devices['Desktop Chrome'] },
+    //   use: {
+    //     ...devices['Desktop Chrome'],
+    //     launchOptions: {
+    //       args: ['--disable-dev-shm-usage', '--no-sandbox', '--disable-gpu', '--disable-setuid-sandbox'],
+    //     },
+    //   },
     // },
 
     // {
